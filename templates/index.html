@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <h1 class="text-center">ImageClassifier</h1>
+  <form class="p-3 text-center" action="/" , method="post" enctype="multipart/form-data">
+    <input class="form-control" type="file" name="imagefile">
+    <input class="btn btn-primary mt-3" type="submit" value="Predict Image">
+  </form>
+
+  {% if prediction %}
+    <p class = "text-center"> image is a {{prediction}}</p>
+  {% endif %}  
+
+
+</body>
+
+</html>
